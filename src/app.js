@@ -16,6 +16,9 @@ hbs.registerPartials(partialsPath);
 
 //Setup static directory to serve CSS and JS files 
 app.use(express.static(publicDirectoryPath));
+
+//port which is provided by heroku, or hosted locally
+const port = process.env.PORT || 3000
  
 //using response methods for serving up dynamic templates
 app.get('', (req,res) =>{
@@ -88,9 +91,9 @@ app.get('*', (req,res) =>{
     })
 })
 
-app.listen(3000, () =>{
+app.listen(port, () =>{
 
-    console.log(`Server is up and running!`);
+    console.log(`Server is up and running at ${port}!`);
 })
 
 //app.com

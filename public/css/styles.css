@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Secular+One&family=Titillium+Web&display=swap');
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(84, 140, 255, 0.7),
+      rgba(147, 255, 216, 0.7)
+    ),
+    url(../img/mount-fuji-1313x875.jpg);
+  background-size: cover;
+  background-position: top;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  display : flex;
+  flex-direction: column;
+}
+
+h3{
+    color : white;
+    text-decoration: wavy;
+}
+a{
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  padding : 0 5px 0 5px;
+
+}
+.parent {
+  width: 70vw;
+  height : 70vh;
+  background-color: rgba(147, 255, 216, 0.3);
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.2);
+  padding : 15px;
+}
+
+input{
+  border : 1px solid #cccccc;
+  padding : 8px;
+}
+
+button{
+  cursor: pointer;
+  border : 1px solid #cccccc;
+  background: #cccccc;
+  color : white;
+  padding : 8px;
+}
+
+#message-1,#message-2{
+  font-family: 'Secular One', sans-serif;
+  font-weight : 400;
+  
+}
+form{
+  padding : 10px;
+}
